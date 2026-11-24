@@ -1,0 +1,463 @@
+/* 1. Pengaturan umum */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #2F3E32; /* Warna teks gelap bernuansa hijau alami */
+    line-height: 1.6;
+    background-color: #F3F7F0; /* Latar belakang krem kehijauan lembut ala cafe matcha */
+}
+
+/* Promo strip paling atas */
+.top-promo-bar {
+    background-color: #E6EFE1;
+    color: #36502A;
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 13px;
+    border-bottom: 1px solid #C8D9BE;
+}
+
+/* 2. Header dan menu */
+header {
+    background-color: #557A46; /* Hijau matcha utama */
+    color: white;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+.badge-kyoto {
+    display: inline-block;
+    background-color: #436335;
+    color: #E6EFE1;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 15px;
+    color: #EDF4E8;
+}
+
+nav {
+    margin-top: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 3. Isi halaman */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #D5E1CD; /* Garis tepi hijau muda lembut */
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px 0;
+    box-shadow: 0 4px 12px rgba(85, 122, 70, 0.08); /* Efek bayangan hijau tipis */
+}
+
+.section-header {
+    margin-bottom: 16px;
+}
+
+.sub-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6B8E5B;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 4px 0 0;
+    color: #436335; /* Hijau matcha tua untuk judul */
+    border-bottom: 3px solid #9BC185; /* Aksen garis bawah hijau matcha cerah */
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #36502A;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Bagian Tentang */
+.about-grid {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 1.2;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.highlight-box {
+    background-color: #F7FAF5;
+    border: 1px solid #D5E1CD;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 14px;
+}
+
+.highlight-box h3 {
+    margin-top: 0;
+}
+
+.step-list {
+    padding-left: 20px;
+    margin: 8px 0 0;
+}
+
+.step-list li {
+    margin-bottom: 6px;
+}
+
+.step-list li span {
+    font-weight: 600;
+    color: #436335;
+    margin-right: 4px;
+}
+
+/* Kartu Produk */
+.product-cards {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.p-card {
+    flex: 1;
+    background-color: #FAFDF8;
+    border: 1px solid #D5E1CD;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.p-badge {
+    display: inline-block;
+    background-color: #E6EFE1;
+    color: #36502A;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.p-card h3 {
+    margin: 4px 0;
+}
+
+.p-desc {
+    font-size: 14px;
+    color: #4A5D4D;
+    margin: 6px 0 12px;
+}
+
+.p-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding-top: 8px;
+    border-top: 1px dashed #D5E1CD;
+}
+
+.btn-order,
+.btn-bundle {
+    display: inline-block;
+    background-color: #557A46;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.btn-order:hover,
+.btn-bundle:hover {
+    background-color: #436335;
+}
+
+/* 4. Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+th, td {
+    border: 1px solid #D5E1CD;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #E6EFE1; /* Latar header tabel hijau sangat muda */
+    color: #36502A;
+}
+
+/* Bagian Bundling & Promo */
+.promo-banner {
+    background-color: #F4F9F0;
+    border: 1px solid #C8D9BE;
+    border-left: 4px solid #557A46;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.promo-banner h3 {
+    margin-top: 0;
+}
+
+.promo-perks {
+    padding-left: 20px;
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+
+.bundle-grid {
+    display: flex;
+    gap: 16px;
+}
+
+.bundle-card {
+    flex: 1;
+    background-color: #FAFDF8;
+    border: 1px solid #D5E1CD;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.featured-bundle {
+    background-color: #EFF6EB;
+    border: 2px solid #557A46;
+}
+
+.bundle-tag {
+    display: inline-block;
+    background-color: #E6EFE1;
+    color: #36502A;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 6px;
+}
+
+.bundle-list {
+    padding-left: 18px;
+    margin: 6px 0 12px;
+    font-size: 14px;
+}
+
+.bundle-price {
+    margin-bottom: 12px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #778779;
+    font-size: 13px;
+    margin-right: 6px;
+}
+
+.new-price {
+    color: #36502A;
+    font-size: 17px;
+}
+
+/* Bagian Video & Proses */
+.media-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.media-item {
+    flex: 1;
+}
+
+.iframe-wrapper iframe {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+}
+
+/* Bagian Kontak & Peta jadi kolom cantik */
+#kontak .contact-grid {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.contact-form-box,
+.contact-map-box {
+    flex: 1;
+    background-color: #F7FAF5;
+    border: 1px solid #D5E1CD;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.contact-form-box h3,
+.contact-map-box h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #36502A;
+    font-size: 17px;
+}
+
+.address-info,
+.hours-info {
+    background-color: #FFFFFF;
+    border: 1px solid #E1ECD9;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #36502A;
+    margin-bottom: 5px;
+}
+
+.map-frame {
+    margin-top: 8px;
+}
+
+.map-frame iframe {
+    width: 100%;
+    height: 410px;
+    border-radius: 8px;
+    display: block;
+}
+
+/* 5. Form */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B8CDB0;
+    border-radius: 6px;
+    font-family: inherit;
+    background-color: white;
+}
+
+button {
+    background-color: #557A46;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #436335;
+}
+
+/* 6. Tombol WhatsApp */
+.tombol-wa {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s;
+}
+
+.tombol-wa:hover {
+    background-color: #1EBE5D;
+}
+
+/* 7. Footer */
+footer {
+    background-color: #2D3E24; /* Hijau tua gelap pekat untuk footer */
+    color: #D5E1CD;
+    text-align: center;
+    padding: 16px;
+    margin-top: 24px;
+}
+
+.footer-brand {
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+
+footer p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+/* Biar rapi di HP */
+@media (max-width: 768px) {
+    .about-grid,
+    .product-cards,
+    .bundle-grid,
+    .media-grid,
+    #kontak .contact-grid {
+        flex-direction: column;
+    }
+
+    .map-frame iframe {
+        height: 260px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px 8px;
+    }
+}
